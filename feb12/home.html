@@ -9,16 +9,27 @@
         body{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        .container{
+            display: flex;
+            gap: 1rem;
+        }
         .box{
             border: 2px solid navy;
             background-color: lightgray;
             padding: 5px;
             margin: 2rem;
         }
+
+        @media (max-width: 600px) {
+            .container{
+                flex-direction: column;
+            }
+        }
     </style>
    
 </head>
 <body>
+    <div class="container">
     <div class="box" style="background-color: lightblue;">
         <h3>Section One</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, officiis itaque quo alias recusandae magnam similique, odit, cum sed nemo et dolore neque veritatis? Harum cupiditate saepe accusamus veritatis consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate numquam delectus necessitatibus illo perferendis dicta sit hic quasi corporis odit illum expedita, vero ab eius ipsum natus libero eligendi. Rerum?</p>
@@ -42,6 +53,7 @@
             <li>Item One</li>
             <li>Item Two</li>
         </ul>
+    </div>
     </div>
 </body>
 </html>
